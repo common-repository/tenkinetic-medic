@@ -1,0 +1,196 @@
+	* {box-sizing:border-box;}
+
+	.tk-wpm-system-status {color:orange;padding:10px;border-radius:10px;min-height:20px;float:right;margin:auto;}
+	.tk-wpm-admin-page-container p.tk-wpm-system-header {float:left;clear:none;margin-top:0;}
+	.tk-wpm-admin-page-container p.tk-wpm-system-options {float:right;clear:none;margin:auto 15px;padding:10px;}
+
+	#tk-wpm-freepik {clear:both;line-height:41px;color:#a9a9a9;}
+	#tk-wpm-freepik span, #tk-wpm-freepik a {float:left;}
+
+	.tk-wpm-confirm {width:100%;height:100%;background-color:rgba(0,0,0,0.4);position:fixed;top:0;left:0;color:white;font-size:1.2em;}
+	.tk-wpm-confirm div {background-color:teal;border-radius:15px;padding:15px;position:relative;top:50%;transform: translateY(-50%);width:450px;margin:auto;overflow:hidden;}
+	.tk-wpm-confirm p {font-size:1.2em;text-align:center;}
+	.tk-wpm-confirm button {margin-top:15px;}
+	.tk-wpm-confirm .tk-wpm-confirm-ok {float:left;clear:both;}
+	.tk-wpm-confirm .tk-wpm-confirm-cancel {float:right;}
+
+
+/* BUTTONS */
+
+	.tk-wpm-admin-page-container button, .tk-wpm-confirm button {background-color: #00a1b3;height: 30px;line-height: 29px;border:none;border-radius: 15px;padding: 0 15px;color: white; cursor: pointer;}
+
+/* ADMIN TABLES */
+
+	.tk-wpm-admin-page-container {margin-right:20px;}
+	.tk-wpm-admin-page-container-left {float:left;width:48%;background-color:#D3D6DA;padding:10px;border-radius:10px;}
+	.tk-wpm-admin-page-container-right {float:right;width:48%;margin-right:2%;background-color:#D3D6DA;padding:10px;border-radius:10px;}
+	.tk-wpm-admin-page-container-right h2 {margin-top:5px;}
+	table {margin-right:20px;width:100%;}
+	.tk-wpm-admin-page-container p {clear:both;}
+	/*table td {max-width:380px;}*/
+	.tk-wpm-admin-page-container h2 {color:#444444;}
+
+	table.dynatable, table.empty {border: solid 2px #00a1b3;border-collapse:collapse;}
+	table.dynatable button, table.empty button {margin-right:5px;}
+	table.dynatable th, table.dynatable td,
+	table.empty th, table.empty td {border:solid 1px #888888;padding:5px 10px;}
+	table.dynatable th, table.empty th {font-weight:bold;background-color:rgba(0,161,179,0.5);color:#483949;}
+	table .centre {text-align:center;}
+	table tr.lowlight {background-color:#dddddd;}
+	table.dynatable td, table.empty td {padding:3px;}
+
+	.tk-wpm-scroller {max-height:140px;overflow:scroll;}
+	.tk-wpm-scroller pre {font:inherit;}
+
+	#job-messages tr td.sender, #job-messages tr td.message {border-bottom:solid 1px #cccccc;padding-bottom:5px;}
+
+	button.tk-wpm-patch-pages, button.tk-wpm-view-patch-parameters {float:right;}
+
+	table.tk-wpm-activity-log th[data-dynatable-column=details]{width:75%;}
+	table.tk-wpm-jobs th[data-dynatable-column=description]{width:50%;}
+	table.tk-wpm-parameters th[data-dynatable-column=parameterValue]{width:25%;}
+
+	.tk-wpm-message-1 {cursor:pointer;}
+	.tk-wpm-message-1.unread {color:rgb(0,161,179);}
+
+/* FORMS */
+
+	table tr.form-start td {border-top:solid 1px #cccccc;}
+
+	table#table-create-job {width:50%;}
+	table#table-create-job td span {float:left;width:30%;font-weight:600;}
+	table#table-create-job td span.note {color:#888888;font-size:0.95em;float:right;width:70%;font-weight:200;}
+	table#table-create-job td input, table#table-create-job td textarea {margin:8px;width:97%;}
+	table#table-create-job td textarea {height:180px;}
+	button#submit-job {margin:8px;}
+
+	table#job-messages {width:100%;}
+	table#job-messages span {font-weight:600;}
+	table#job-messages textarea {width:97%;height:180px;margin:8px;}
+
+	.tk-wpm-notifications {margin:5px 0;color:rgb(0,161,179);}
+
+	textarea.tk-wpm-parameter-value {width:100%;min-height:120px;}
+
+	.tk-wpm-job-form {display:none;clear:both;width:49%;min-width:450px;margin:10px 0;border-radius:15px;color:white;padding:15px;background-color:teal;overflow:hidden;}
+	.tk-wpm-job-form input, .tk-wpm-job-form textarea {width:100%;}
+	.tk-wpm-job-form button {margin:10px 0 0 10px;float:right;}
+
+	.tk-wpm-support-form {display:inline-block;background-color: teal;padding: 15px;border-radius: 15px;color: white;}
+	.tk-wpm-support-form p {min-width:450px;}
+	.tk-wpm-support-message, .tk-wpm-support-email {width:100%;}
+	.tk-wpm-support-message	{min-height:240px;}
+	.tk-wpm-support-form button {float:right;}
+
+/* NEW ITEM NOTIFICATION */
+
+	.tk-wpm-new-item-count {display:inline-block;width:18px;height:18px;background-color:rgba(0,161,179,0.5);border-radius:9px;font-size:0.8em;line-height:18px;text-align:center;margin-left:5px;}
+
+/* USAGE PROCEDURE */
+
+	.tk-wpm-procedure-number, .tk-wpm-procedure-step {float:left;height:30px;border-radius:15px;line-height:30px;text-align:center;color:white;}
+	.tk-wpm-procedure-number {clear:both;margin-right:10px;width:30px;background-color:green;}
+	.tk-wpm-procedure-step {clear:right;display:inline-block;padding:0 10px;background-color:orange;}
+	.tk-wpm-procedure-details {clear:both;padding:10px 0 0 40px;max-width:640px;text-align:justify;}
+	.tk-wpm-procedure-details .tk-wpm-emphasis {color:rgb(0,161,179);}
+	p.tk-wpm-procedure-details {padding-top:0;}
+
+/* JOBS OBJECT VIEW */
+
+	.tk-wpm-admin-page-container .tk-wpm-account-verification-notice {color:white;background-color: orange;padding: 10px;border-radius: 10px;min-height: 20px;}
+
+	/* colour keys */
+	.tk-wpm-job-colour-legend {overflow:hidden;margin-bottom:10px;}
+	.tk-wpm-job-colour-legend div {float:left;margin-right:3px;padding:0 10px;color:white;height:30px;line-height:30px;border-radius: 15px;}
+	.tk-wpm-job-demo  {background-color: #aaaaaa;}
+	.tk-wpm-job-demo .tk-wpm-job-text-invert {color:#aaaaaa;}
+	.tk-wpm-job-created {background-color:rgba(0, 161, 179, 0.8);}
+	.tk-wpm-job-created .tk-wpm-job-text-invert {color:rgba(0, 161, 179, 0.8);}
+	.tk-wpm-job-submitted, .tk-wpm-job-paid, .tk-wpm-job-accepted {background-color:green;}
+	.tk-wpm-job-submitted .tk-wpm-job-text-invert, .tk-wpm-job-paid .tk-wpm-job-text-invert, .tk-wpm-job-accepted .tk-wpm-job-text-invert {color:green;}
+	.tk-wpm-job-declined {background-color:red;}
+	.tk-wpm-job-declined .tk-wpm-job-text-invert {color:red;}
+	.tk-wpm-job-inprogress {background-color:#AB00FF;}
+	.tk-wpm-job-inprogress .tk-wpm-job-text-invert {color:#AB00FF;}
+	.tk-wpm-job-completed, .tk-wpm-job-quoted {background-color: orange;}
+	.tk-wpm-job-completed .tk-wpm-job-text-invert, .tk-wpm-job-quoted .tk-wpm-job-text-invert {color:orange;}
+	.tk-wpm-jobs-container {clear:both;min-width:960px;}
+	.tk-wpm-job
+	{
+		width: 49%;
+		min-width:450px;
+		margin: 10px 0;
+		border-radius: 15px;
+		color:white;
+		padding:15px;
+	}
+	/*
+	box-shadow:
+		0 3px 5px rgba(0,0,0,0.5),
+		inset 0px -10px 12px -4px  rgba(50,55,60,0.7),  /* bottom - THE RED SHADOW
+		inset 0px  5px  12px  0px  rgba(250,255,255,0.5), /* top
+		inset 5px  0px  12px  0px  rgba(255,255,255,0.5), /* left
+		inset -5px  0px  12px  0px  rgba(50,55,60,0.7); /* right
+	*/
+	/*inset 0 0 12px rgba(50,55,60,0.8)*/
+
+	.tk-wpm-job-left {float:left;clear:left;}
+	.tk-wpm-job-right {float:right;clear:right;}
+
+	.tk-wpm-job a {color:white;}
+
+	.tk-wpm-job-managers * {float:right;}
+
+	.tk-wpm-job-managers div {float:right;padding:0 5px 5px 0;line-height:22px;cursor:pointer;}
+	.tk-wpm-job-managers img {float:right;padding:0 5px 5px 0;}
+	.tk-wpm-job-name, .tk-wpm-job-status, .tk-wpm-job-creation, .tk-wpm-job-description, .tk-wpm-job-manager {float:left;}
+	.tk-wpm-job-status, .tk-wpm-job-creation, .tk-wpm-job-manager {clear:left;}
+	.tk-wpm-job-description, .tk-wpm-job-url {padding:10px;margin-top:5px;border-top:solid 1px white;width:100%;clear:both;}
+	.tk-wpm-job .tk-wpm-notifications {float:left;clear:left;color:white;}
+
+/* JOB MANAGERS */
+
+	.tk-wpm-job-manager {width:100%;}
+	.tk-wpm-job-manager-header {float:right;margin:5px 0;width:100%;border-top:solid 1px white;border-bottom:solid 1px white;padding:5px 0;}
+	.tk-wpm-job-manager-content {clear:both;max-height:240px;overflow: scroll;}
+
+	.tk-wpm-job-messages div span {float:none;}
+	.tk-wpm-message-type-0, .tk-wpm-message-type-1 {clear:both;padding:8px;margin:5px 0;background-color: rgba(50, 50, 50, 0.2);border-radius: 5px;}
+	.tk-wpm-message-type-0 {float:left;color:rgba(255, 255, 255, 0.6);}
+	.tk-wpm-message-type-1 {float:right;cursor:pointer;}
+	.tk-wpm-message-type-1[data-message-status=Read] {color:rgba(255,255,255,0.6);}
+	.tk-wpm-job-new-message {width:100%;max-width:100%;}
+	.tk-wpm-job-manager-send-message {cursor:pointer;}
+
+	.tk-wpm-job-manager-close {cursor:pointer;}
+	.tk-wpm-job-manager-header div {line-height:24px;float:left;}
+	.tk-wpm-job-manager-header img {float:right;width:22px;margin-left:3px;}
+
+	.tk-wpm-job-manager-expand {cursor:pointer;}
+
+	.tk-wpm-job-manager-number {width:20px;height:20px;border-radius:10px;line-height:20px;text-align:center;background-color:white;clear:both;}
+
+	.tk-wpm-job-accept {cursor:pointer;}
+
+	.tk-wpm-job-patch {background-color: rgba(0, 0, 0, 0.2);overflow: hidden;border-radius: 10px;padding:10px;margin:10px 0;}
+	.tk-wpm-job-patch > * {float:left;clear:left;/*margin:5px 0 0 30px;height:20px;*/line-height:20px;}
+	.tk-wpm-job-patch .tk-wpm-job-manager-number {padding-left:0;}
+	.tk-wpm-job-patch-remove {float:right;clear:right;cursor:pointer;width:22px;}
+	div.tk-wpm-job-patch-enable {float:right;clear:right;}
+	input.tk-wpm-job-patch-enable {margin:0 0 0 10px;}
+	.tk-wpm-job-patch-enable span {float:right;}
+	.tk-wpm-job-patch-page-selector {clear:left;width:100%;}
+	.tk-wpm-job-patch-page-selector select {width:100%;}
+	.tk-wpm-job-patch-pages select {padding:0 10px;margin:0 0 0 10px;}
+	.tk-wpm-job-patch-description {clear:both;height:auto;border-bottom:solid 1px white;width:100%;padding:5px 0;margin-bottom:10px;}
+	.tk-wpm-job-patch-parameters {clear:both;height:auto;width:100%;padding:5px 0;}
+	.tk-wpm-job-patch-parameters textarea {clear:both;max-width:100%;width:100%;}
+	.tk-wpm-job-manager-save-patches {cursor:pointer;}
+
+	.tk-wpm-job-edit-name, .tk-wpm-job-edit-description, .tk-wpm-job-edit-url {width:100%;max-width:100%;}
+	.tk-wpm-job-edit-description {min-height:120px;}
+	.tk-wpm-job-manager-save-job {cursor:pointer;}
+
+/* REPOSITORY */
+
+	.tk-wpm-repository p {width:75%;min-width:450px;}
